@@ -61,5 +61,5 @@ All ChartJs plugin options set in <code>'clientOptions'</code>
 # License
 
 <a href="https://github.com/elysiym">
-<img src="https://avatars2.githubusercontent.com/u/23127767?v=3&s=200">
+<img src="https://avatars2.githubusercontent.com/u/23127767?v=3&s=200" width="70px">
 </a>
