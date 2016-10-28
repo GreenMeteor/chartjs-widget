@@ -60,6 +60,9 @@ All ChartJs plugin options set in <code>'clientOptions'</code>
 
 # License
 
+GNU General Public License v3.0
+
 <a href="https://github.com/elysiym">
 <img src="https://avatars2.githubusercontent.com/u/23127767?v=3&s=200" width="70px">
 </a>
+<a href="https://elysium.help" alt="https://elysium.help">https://elysium.help</a>
