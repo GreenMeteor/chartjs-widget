@@ -52,3 +52,14 @@ The following example is using the <code>Pie</code> type of chart. Please, check
 ```
 
 All ChartJs plugin options set in <code>'clientOptions'</code> 
+
+# Credits
+<ul>
+<li><a href="https://github.com/marciy">NIKITA MARCIY</a></li>
+</ul>
+
+# License
+
+<a href="https://github.com/elysiym">
+<img src="https://avatars2.githubusercontent.com/u/23127767?v=3&s=200">
+</a>
