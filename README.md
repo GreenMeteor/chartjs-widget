@@ -65,6 +65,6 @@ GNU General Public License v3.0
 <a href="https://github.com/elysiym">
 <img src="https://avatars2.githubusercontent.com/u/23127767?v=3&s=200" width="70px">
 </a>
-<p>Social network for quick and easy search of donors.</p>
+<span>Social network for quick and easy search of donors.</span>
 <a href="https://elysium.help" alt="https://elysium.help">https://elysium.help</a>
 </blockquote>
