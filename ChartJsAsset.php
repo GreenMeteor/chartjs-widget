@@ -20,7 +20,7 @@ class ChartJsAsset extends AssetBundle
 {
 
     public $js = [
-        'Chart.min.js'
+        '/assets/Chart.min.js'
     ];
 
     public function init()
