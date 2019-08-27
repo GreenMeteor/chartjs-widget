@@ -1,6 +1,6 @@
 <?php
 
-namespace app\widgets\chartjs;
+namespace humhub\widgets\chartjs;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
