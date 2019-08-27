@@ -6,7 +6,7 @@ Widget based on <a href="https://github.com/2amigos/yii2-chartjs-widget">yii2-ch
 
 # Installation
 
-For manual installation put the downloaded repository in <code>protected/widgets</code> folder.
+For manual installation put the downloaded repository in <code>/protected/humhub/widgets</code> folder.
 
 # Usage
 
@@ -24,7 +24,7 @@ The following types are supported:
 The following example is using the <code>Pie</code> type of chart. Please, check <a href="http://www.chartjs.org/docs/">ChartJs plugin documentation</a> for the different types supported by the plugin.
 
 ```
-  <?= \app\widgets\chartjs\ChartJs::widget([
+  <?= \humhub\widgets\chartjs\ChartJs::widget([
             'type' => 'pie',
             'options' => [
                 'width' => 400,
