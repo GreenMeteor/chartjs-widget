@@ -2,7 +2,7 @@
 
 Renders a <a href="http://chartjs.org">ChartJs plugin</a> widget
 
-Widget based on <a href="https://github.com/2amigos/yii2-chartjs-widget">yii2-chartjs-widget</a> and
+Widget based on <a href="https://github.com/2amigos/yii2-chartjs-widget">yii2-chartjs-widget</a>
 
 # Installation
 
