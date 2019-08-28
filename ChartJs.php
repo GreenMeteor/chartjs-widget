@@ -84,7 +84,7 @@ class ChartJs extends \yii\base\Widget
     {
         $id = $this->options['id'];
         $view = $this->getView();
-        ChartJsAsset::register($view);
+        Assets::register($view);
 
         $config = Json::encode(
             [
