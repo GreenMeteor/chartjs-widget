@@ -10,13 +10,13 @@ use yii\web\AssetBundle;
 
 /**
  *
- * ChartPluginAsset
+ * Chart Plugin Assets
  *
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
  */
-class ChartJsAsset extends AssetBundle
+class Assets extends AssetBundle
 {
 
     public $js = [
