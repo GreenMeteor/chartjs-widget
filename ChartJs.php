@@ -3,7 +3,7 @@
 namespace humhub\widgets\chartjs;
 
 use yii\base\InvalidConfigException;
-use yii\helpers\ArrayHelper;
+use yii\base\Widget;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\JsExpression;
@@ -16,12 +16,13 @@ use yii\web\JsExpression;
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
  */
-class ChartJs extends \yii\base\Widget
+class ChartJs extends Widget
 {
     /**
      * @var array the HTML attributes for the widget container tag.
      */
     public $options = [];
+
     /**
      * @var array the options for the underlying ChartJs JS plugin.
      * Please refer to the corresponding ChartJs type plugin Web page for possible options.
@@ -29,11 +30,13 @@ class ChartJs extends \yii\base\Widget
      * how to use the "Line chart" plugin.
      */
     public $clientOptions = [];
+
     /**
      * @var array the datasets configuration options and data to display on the chart.
      * See [its documentation](http://www.chartjs.org/docs/) for the different options.
      */
     public $data = [];
+
     /**
      * @var string the type of chart to display. The possible options are:
      * - "Line" : A line chart is a way of plotting data points on a line. Often, it is used to show trend data, and the
@@ -53,9 +56,16 @@ class ChartJs extends \yii\base\Widget
     public $type;
 
     /**
+     * @var array the plugin objects allowing to assign custom callback functions to Chart events.
+     * See [plugins & events documentation](http://www.chartjs.org/docs/latest/developers/plugins.html#plugin-core-api).
+     */
+    public $plugins = [];
+
+    /**
      * Initializes the widget.
      * This method will register the bootstrap asset bundle. If you override this method,
      * make sure you call the parent implementation first.
+     * @throws InvalidConfigException
      */
     public function init()
     {
@@ -80,7 +90,7 @@ class ChartJs extends \yii\base\Widget
     /**
      * Registers the required js files and script to initialize ChartJS plugin
      */
-    protected function registerClientScript()
+    protected function registerClientScript(): void
     {
         $id = $this->options['id'];
         $view = $this->getView();
@@ -90,7 +100,8 @@ class ChartJs extends \yii\base\Widget
             [
                 'type' => $this->type,
                 'data' => $this->data ?: new JsExpression('{}'),
-                'options' => $this->clientOptions ?: new JsExpression('{}')
+                'options' => $this->clientOptions ?: new JsExpression('{}'),
+                'plugins' => $this->plugins
             ]
         );
 
