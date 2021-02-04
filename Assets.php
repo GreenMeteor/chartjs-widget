@@ -18,15 +18,10 @@ use yii\web\AssetBundle;
  */
 class Assets extends AssetBundle
 {
+    public $sourcePath = '@chartjs/assets';
 
     public $js = [
-        '/assets/Chart.min.js'
+        'js/Chart.min.js'
     ];
-
-    public function init()
-    {
-        $this->sourcePath = dirname(__FILE__);
-        parent::init();
-    }
 
 }
